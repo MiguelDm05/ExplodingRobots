@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardGame</title>
+    <link rel="stylesheet" href="src/css/style.css" type="text/css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <!-- JUGADORES -->
+        <div id="contenedorJugadores">
+            <div class="contenedorJugador">
+                <div class="cabeceraJugador">
+                    <img src="src/img/avatar/avatar_a.png">
+                    <h2><span id="J1Nombre">Jugador 1</span></h2>
+                </div>
+                <div class="estadisticasJugador">
+                    <p id="J1NumCartas">⚪️ Número de cartas: </p>
+                    <p id="J1Puntos">⚪️ Puntos totales: </p>
+                    <p id="J1saltoTurno">⚪️ Cartas salto turno: </p>
+                    <p id="J1Desactivacion">⚪️ Cartas desactivación: </p>
+                </div>
+            </div>
+            <div class="contenedorJugador">
+                <div class="cabeceraJugador">
+                    <img src="src/img/avatar/avatar_b.png">
+                    <h2><span id="J2Nombre">Jugador 2</span></h2>
+                </div>
+                <div class="estadisticasJugador">
+                    <p id="J2NumCartas">⚪️ Número de cartas: </p>
+                    <p id="J2Puntos">⚪️ Puntos totales: </p>
+                    <p id="J2saltoTurno">⚪️ Cartas salto turno: </p>
+                    <p id="J2Desactivacion">⚪️ Cartas desactivación: </p>
+                </div>
+            </div>
+            <div class="contenedorJugador">
+                <div class="cabeceraJugador">
+                    <img src="src/img/avatar/avatar_c.png">
+                    <h2><span id="J3Nombre">Jugador 3</span></h2>
+                </div>
+                <div class="estadisticasJugador">
+                    <p id="J3NumCartas">⚪️ Número de cartas: </p>
+                    <p id="J3Puntos">⚪️ Puntos totales: </p>
+                    <p id="J3saltoTurno">⚪️ Cartas salto turno: </p>
+                    <p id="J3Desactivacion">⚪️ Cartas desactivación: </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABLERO -->
+        <div id="contenedorTablero">
+            <div id="contenedorDeck">
+                <div id="deck">
+                    <img src="src/img/deck/deck.png">
+                </div>
+                <div id="selectCard">
+                    <img id="imgCartaRobada" src="">
+                </div>
+
+            </div>
+            <div id="contenedorAcciones">
+                <button id="btnRobar" class="btnAccion">Robar carta</button>
+                <button id="btnPasar" class="btnAccion">Pasar Turno</button>
+                <button id="btnReiniciar" class="btnReiniciar">Reiniciar Juego</button>
+            </div>
+        </div>
+
+        <!-- Descarte -->
+        <div id="contenedorDescartes">
+            <h2 class="h2CartasDescartadas">Cartas descartadas</h2>
+            <ul id="listaDescarte">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                ...
+                <li>Elemento N</li>
+              </ul>
+        </div>
+
+    </div>
+
+    <script src="src/js/script.js"></script>
+    
+</body>
+</html>
